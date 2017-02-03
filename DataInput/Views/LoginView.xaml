@@ -1,0 +1,30 @@
+﻿<Page x:Class="DataInput.Views.LoginView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DataInput.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="LoginView">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="LoginLabel" Content="Login" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="14" />
+        <TextBox x:Name="Login" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" FontSize="14" Padding="6" Margin="10, 0, 10, 0" />
+
+        <Label x:Name="PasswordLabel" Content="Password" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="14" />
+        <TextBox x:Name="Password" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" FontSize="14" Padding="6" Margin="10, 0, 10, 0" />
+
+        <Button x:Name="LoginBtn" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Content="Login" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="30, 5" Margin="10, 0, 0, 0" />
+    </Grid>
+</Page>
